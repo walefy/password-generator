@@ -7,5 +7,3 @@ passwordBtnEl.addEventListener('click', () => {
   const randomPassword = nanoid();
   displayPasswordElement.innerText = randomPassword;
 });
-
-console.log(randomPassword);
