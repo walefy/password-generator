@@ -1,5 +1,4 @@
 import { nanoid } from 'nanoid';
-import copy from 'clipboard-copy';
 import './style.css';
 
 const passwordBtnEl = document.querySelector('button');
@@ -11,7 +10,7 @@ passwordBtnEl.addEventListener('click', () => {
 });
 
 displayPasswordElement.addEventListener('click', (event) => {
-  copy(event.target.textContent)
+  navigator.clipboard.writeText(event.target.textContent)
     .then(() => {
       event.target.classList.add('copied');
       const TIMEDURATION = 2000;
