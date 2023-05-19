@@ -11,5 +11,11 @@ passwordBtnEl.addEventListener('click', () => {
 });
 
 displayPasswordElement.addEventListener('click', (event) => {
-  copy(event.target.innerText);
+  copy(event.target.textContent)
+    .then(() => {
+      event.target.classList.add('copied');
+      const TIMEDURATION = 2000;
+      setTimeout(() => event.target.classList.remove('copied'), TIMEDURATION);
+    })
+    .catch((error) => { event.target.innerText = error.message; });
 });
