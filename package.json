@@ -1,13 +1,13 @@
 {
   "name": "gerador-de-senhas",
   "version": "1.0.0",
-  "description": "",
+  "description": "A secure password generator",
   "main": "index.js",
   "scripts": {
     "dev": "vite --open"
   },
   "keywords": [],
-  "author": "",
+  "author": "Walefy D. Gonçalves",
   "license": "ISC",
   "dependencies": {
     "clipboard-copy": "^4.0.1",
